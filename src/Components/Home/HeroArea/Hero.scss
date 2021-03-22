@@ -1,0 +1,30 @@
+.hero_bg {
+  background: linear-gradient(360deg, #ffffff, #ffffff);
+  //   filter: drop-shadow(16px 16px 20px #002e57);
+}
+
+.custom_menu {
+  .container {
+    .menu_wrapper {
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      .nav_list {
+        margin: 10px 40px;
+        line-height: 40px;
+        color: #000;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+// .colorButton {
+//   background-color: #f9bb00;
+//   text-transform: capitalize;
+//   width: 120px;
+//   border-radius: 30px;
+//   font-size: 16px;
+//   box-shadow: 0px 15px 18px #f9bb008c;
+// }
