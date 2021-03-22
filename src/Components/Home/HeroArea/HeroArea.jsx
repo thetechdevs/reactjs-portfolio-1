@@ -4,7 +4,7 @@ import "./Hero.scss";
 const HeroArea = () => {
   return (
     <Grid container item md={12} xl={12} xs={12}>
-      <Grid item md={6} sm={12} xs={12}>
+      <Grid item md={6} sm={6} xs={12}>
         <div style={{ marginTop: "50px" }}>
           <Typography variant="h2">
             Hy! I am <br />
@@ -32,7 +32,7 @@ const HeroArea = () => {
           </Button>
         </div>
       </Grid>
-      <Grid item md={6} sm={12} xs={12}>
+      <Grid item md={6} sm={6} xs={12}>
         <div style={{ width: "100%" }}>
           <img src={heroImg} alt="portfolio" style={{ width: "100%" }} />
         </div>

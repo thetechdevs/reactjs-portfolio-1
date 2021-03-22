@@ -1,6 +1,13 @@
-.UnderLine{
-    width: 200px;
-    height: 5px;
-    background-color: aquamarine;
-    margin-bottom: 10px;
+.about_Wrapper {
+  background: linear-gradient(360deg, #ffffff, #ffffff);
+  color: #000;
+}
+.about_Wrapper p {
+  color: #000;
+}
+.UnderLine {
+  width: 200px;
+  height: 5px;
+  background-color: aquamarine;
+  margin-bottom: 10px;
 }

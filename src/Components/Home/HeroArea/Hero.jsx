@@ -21,7 +21,7 @@ const HeroMenu = (
               <li>
                 <NavLink
                   activeClassName="text-primary"
-                  to="/home"
+                  to="/"
                   className="nav_list"
                 >
                   Home
@@ -39,7 +39,7 @@ const HeroMenu = (
               <li>
                 <NavLink
                   activeClassName="text-primary"
-                  to="/project"
+                  to="/about"
                   className="nav_list"
                 >
                   About Us
