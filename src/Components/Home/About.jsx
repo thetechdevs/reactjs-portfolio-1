@@ -5,14 +5,14 @@ import '../Style/About.css';
 import { Col, Container, Row } from 'react-bootstrap';
 
 // import assets
-import aboutMe from '../../assets/image/aboutMe.png';
+import aboutMe from '../../assets/image/aboutMe.jpg';
 
 const About = () => {
     return (
-        <>
-            <Container style={{ backgroundColor: "#110F1B", padding: "30px 10px", color: "white" }} >
+        <div style={{ backgroundColor: "#110F1B", padding: "30px 0px", color: "white" }} >
+            <Container>
                 <AboutMe />
-                <Row>
+                <Row className="align-items-center">
                     <Col md={6} sm={12} xs={12} lg={6}>
                         <img className="img-fluid w-100 h-100" src={aboutMe} alt="" />
                     </Col>
@@ -53,7 +53,7 @@ const About = () => {
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     );
 };
 
