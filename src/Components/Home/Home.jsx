@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../Layout";
+import Service from "./Service";
 
 const Home = () => {
   return (
     <Layout>
-      <h1>home</h1>
+     <Service/>
     </Layout>
   );
 };
