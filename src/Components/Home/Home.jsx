@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <Layout>
       <h1>home</h1>
-      <About />
       <CommentOfClient />
+      <About />
     </Layout>
   );
 };
