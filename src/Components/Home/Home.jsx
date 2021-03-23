@@ -2,17 +2,15 @@ import React from "react";
 import Layout from "../Layout";
 import Hero from "./HeroArea/Hero";
 import Service from "./Service";
-import About from "./About";
 import { CommentOfClient } from "./index";
 const Home = () => {
   return (
     <div>
-      {/* <Layout> */}
-      <Hero />
-      <CommentOfClient />
-      <Service />
-      {/* <About /> */}
-      {/* </Layout> */}
+      <Layout>
+        <Hero />
+        <CommentOfClient />
+        <Service />
+      </Layout>
     </div>
   );
 };

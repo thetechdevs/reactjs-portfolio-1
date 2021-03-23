@@ -10,3 +10,26 @@ body {
   background-color: aquamarine;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .aboutImg_Wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+  img.aboutImg {
+    width: 30% !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutImg_Wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+  img.aboutImg {
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+}

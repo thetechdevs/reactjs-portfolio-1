@@ -1,11 +1,11 @@
-import { Button, Grid, Typography } from "@material-ui/core";
+import { Button, Grid, Hidden, Typography } from "@material-ui/core";
 import heroImg from "../../../assets/hero/pngtree-background-shape.png";
 import "./Hero.scss";
 const HeroArea = () => {
   return (
     <Grid container item md={12} xl={12} xs={12}>
       <Grid item md={6} sm={6} xs={12}>
-        <div style={{ marginTop: "50px" }}>
+        <div style={{ marginTop: "50px", paddingBottom: "30px" }}>
           <Typography variant="h2">
             Hy! I am <br />
             <span style={{ color: "#f9bb00" }}>Sree Sonjoy</span>
@@ -33,9 +33,11 @@ const HeroArea = () => {
         </div>
       </Grid>
       <Grid item md={6} sm={6} xs={12}>
-        <div style={{ width: "100%" }}>
-          <img src={heroImg} alt="portfolio" style={{ width: "100%" }} />
-        </div>
+        <Hidden xsDown>
+          <div style={{ width: "100%" }}>
+            <img src={heroImg} alt="portfolio" style={{ width: "90%" }} />
+          </div>
+        </Hidden>
       </Grid>
     </Grid>
   );

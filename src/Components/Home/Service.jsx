@@ -6,40 +6,50 @@ import serviceStyle from "./Service.module.scss";
 import { Container, Grid } from "@material-ui/core";
 const Service = () => {
   return (
-    <div className={serviceStyle.serviceMain}>
-      <h6 className={serviceStyle.serviceMain__service}>Service</h6>
-      <h1 className={serviceStyle.serviceMain__title}>What we do</h1>
-      <div className={serviceStyle.serviceMain__content}>
-        <Container style={{ padding: "20px" }}>
-          <Grid container item md={12} spacing={2} style={{ padding: "0" }}>
-            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-              <ServiceCard
-                icon={<IoLogoWebComponent />}
-                title="Graphic Design"
-              />
+    <section>
+      <div className={serviceStyle.serviceMain}>
+        <h6 className={serviceStyle.serviceMain__service}>Service</h6>
+        <h1 className={serviceStyle.serviceMain__title}>
+          What <span style={{ color: "#f9bb00" }}>We Do</span>{" "}
+        </h1>
+        <div className={serviceStyle.serviceMain__content}>
+          <Container style={{ padding: "20px" }}>
+            <Grid container item md={12} spacing={2} style={{ padding: "0" }}>
+              <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+                <ServiceCard
+                  icon={<IoLogoWebComponent />}
+                  title="Graphic Design"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+                <ServiceCard
+                  icon={<IoLogoWebComponent />}
+                  title="Apps Design"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+                <ServiceCard
+                  icon={<IoLogoWebComponent />}
+                  title="Interaction Design"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+                <ServiceCard icon={<IoLogoWebComponent />} title="Branding " />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+                <ServiceCard
+                  icon={<IoLogoWebComponent />}
+                  title="Development"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+                <ServiceCard icon={<IoLogoWebComponent />} title="Research " />
+              </Grid>
             </Grid>
-            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-              <ServiceCard icon={<IoLogoWebComponent />} title="Apps Design" />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-              <ServiceCard
-                icon={<IoLogoWebComponent />}
-                title="Interaction Design"
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-              <ServiceCard icon={<IoLogoWebComponent />} title="Branding " />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-              <ServiceCard icon={<IoLogoWebComponent />} title="Development" />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-              <ServiceCard icon={<IoLogoWebComponent />} title="Research " />
-            </Grid>
-          </Grid>
-        </Container>
+          </Container>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,41 +1,73 @@
 import React from "react";
+import { Nav, Navbar } from "react-bootstrap";
+import { Button } from "@material-ui/core";
+import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 
-const Navbar = () => {
-  return <div>navbar</div>;
+const NavBar = () => {
+  return (
+    <Navbar className="bg-transparent custom_menu" expand="lg">
+      <div className="container" style={{ maxWidth: "1300px" }}>
+        <Navbar.Brand style={{ float: "left" }}>
+          <h2>SREE</h2>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse
+          style={{ width: "900px", float: "right" }}
+          id="basic-navbar-nav"
+        >
+          <Nav className="ml-auto">
+            <Router>
+              <ul className="menu_wrapper">
+                <li>
+                  <NavLink
+                    activeClassName="text-primary"
+                    to="/"
+                    className="nav_list"
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    activeClassName="text-primary"
+                    to="/project"
+                    className="nav_list"
+                  >
+                    Portfolio
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    activeClassName="text-primary"
+                    to="/about"
+                    className="nav_list"
+                  >
+                    About Us
+                  </NavLink>
+                </li>
+                <li>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      backgroundColor: "#f9bb00",
+                      textTransform: "capitalize",
+                      width: "120px",
+                      borderRadius: "30px",
+                      fontSize: "16px",
+                      boxShadow: "0px 15px 18px #f9bb008c",
+                    }}
+                  >
+                    <Link to="contact">Contact us</Link>
+                  </Button>
+                </li>
+              </ul>
+            </Router>
+          </Nav>
+        </Navbar.Collapse>
+      </div>
+    </Navbar>
+  );
 };
 
-export default Navbar;
-
-// import React from "react";
-// import { StickyContainer, Sticky } from "react-sticky";
-
-// const Navbar = () => {
-//   return (
-//     <div>
-//       <StickyContainer style={{ position: "sticky", top: "0" }}>
-//         <Sticky>
-//           {({
-//             style,
-//             isSticky,
-//             wasSticky,
-//             distanceFromTop,
-//             distanceFromBottom,
-//             calculatedHeight,
-//           }) => (
-//             <header style={style}>
-//               <ul style={{ display: "flex", backgroundColor: "cadetblue" }}>
-//                 <li style={{ margin: "10px 25px" }}>hello</li>
-//                 <li style={{ margin: "10px 25px" }}>hi</li>
-//                 <li style={{ margin: "10px 25px" }}>sdfsa</li>
-//                 <li style={{ margin: "10px 25px" }}>sdfa</li>
-//                 <li style={{ margin: "10px 25px" }}>sdfas</li>
-//               </ul>
-//             </header>
-//           )}
-//         </Sticky>
-//       </StickyContainer>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
+export default NavBar;

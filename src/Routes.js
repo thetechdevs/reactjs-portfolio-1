@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { About } from "./Components/Home";
-// import About from "./Components/Home/About";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Contact from "./Components/Contact/Contact";
+import About from "./Components/Home/About";
 import Home from "./Components/Home/Home";
 
 const Routes = () => {
@@ -8,7 +8,11 @@ const Routes = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="*">
+          <h1>404 Page Not Found</h1>
+        </Route>
       </Switch>
     </Router>
   );
