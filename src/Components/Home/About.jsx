@@ -17,37 +17,37 @@ const About = () => {
                         <img className="img-fluid w-100 h-100" src={aboutMe} alt="" />
                     </Col>
                     <Col md={6} sm={12} xs={12} lg={6}>
-                        <h2>I am <span style={{ color: "blueviolet" }}>John</span></h2>
+                        <h1 className="font-weight-bold">I am <span style={{ color: "blueviolet" }}>John</span></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non amet id libero maiores, veritatis ducimus? Optio omnis nam quibusdam non hic iusto asperiores impedit voluptatem, consequatur quis!</p>
                         <Row>
                             <Col md={4} lg={3} sm={4} xs={3}><p>Full Name</p></Col>
                             <Col md={1} lg={1} sm={1} xs={1}><span>:</span></Col>
-                            <Col md={7} lg={8} sm={7} xs={7}><p>Johny Sign</p></Col>
+                            <Col md={7} lg={8} sm={7} xs={7}><p>Rayhan Islam</p></Col>
                         </Row>
                         <Row>
                             <Col md={4} lg={3} sm={4} xs={3}><p>Age</p></Col>
                             <Col md={1} lg={1} sm={1} xs={1}><span>:</span></Col>
-                            <Col md={7} lg={8} sm={7} xs={8}><p>25 Years</p></Col>
+                            <Col md={7} lg={8} sm={7} xs={7}><p>25 Years</p></Col>
                         </Row>
                         <Row>
                             <Col md={4} lg={3} sm={4} xs={3}><p>Nationality</p></Col>
                             <Col md={1} lg={1} sm={1} xs={1}><span>:</span></Col>
-                            <Col md={7} lg={8} sm={7} xs={8}><p>America</p></Col>
+                            <Col md={7} lg={8} sm={7} xs={7}><p>America</p></Col>
                         </Row>
                         <Row>
                             <Col md={4} lg={3} sm={4} xs={3}><p>Language</p></Col>
                             <Col md={1} lg={1} sm={1} xs={1}><span>:</span></Col>
-                            <Col md={7} lg={8} sm={7} xs={8}><p>English, French</p></Col>
+                            <Col md={7} lg={8} sm={7} xs={7}><p>English, French</p></Col>
                         </Row>
                         <Row>
                             <Col md={4} lg={3} sm={4} xs={3}><p>Address</p></Col>
                             <Col md={1} lg={1} sm={1} xs={1}><span>:</span></Col>
-                            <Col md={7} lg={8} sm={7} xs={8}><p>120, South Mugda</p></Col>
+                            <Col md={7} lg={8} sm={7} xs={7}><p>120, South Mugda</p></Col>
                         </Row>
                         <Row>
                             <Col md={4} lg={3} sm={4} xs={3}><p>Freelance</p></Col>
                             <Col md={1} lg={1} sm={1} xs={1}><span>:</span></Col>
-                            <Col md={7} lg={8} sm={7} xs={8}><p>Available</p></Col>
+                            <Col md={7} lg={8} sm={7} xs={7}><p>Available</p></Col>
                         </Row>
                         <button className="btn btn-primary mt-3">DOWNLOAD CV</button>
                     </Col>
@@ -57,7 +57,6 @@ const About = () => {
     );
 };
 
-
 function AboutMe() {
     return (
         <div>
@@ -65,7 +64,6 @@ function AboutMe() {
             <div className="UnderLine"></div>
         </div>
     )
-}
-
+};
 
 export default About;
