@@ -10,6 +10,10 @@ import '../../Style/CommentOfClient.css';
 const CommentOfClient = () => {
     return (
         <Container>
+            <div className="w-75">
+                <h2 className="font-weight-bold">Big Clients</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima qui aliquid recusandae distinctio consectetur nostrum nemo delectus dolor asperiores illo.</p>
+            </div>
             <Row className="justify-content-center">
                 <div className="dropbox_icon d-flex align-items-center justify-content-center">
                     <FaDropbox size="45px" color="#2196F3" />
