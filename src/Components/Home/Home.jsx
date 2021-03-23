@@ -1,12 +1,12 @@
-import React from "react";
-import Layout from "../Layout";
-import About from "./About";
+// import Components
+import { Layout, About, CommentOfClient } from "./index";
 
 const Home = () => {
   return (
     <Layout>
       <h1>home</h1>
       <About />
+      <CommentOfClient />
     </Layout>
   );
 };
