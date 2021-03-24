@@ -39,6 +39,15 @@ const NavBar = () => {
                 <li>
                   <NavLink
                     activeClassName="text-primary"
+                    to="/blog"
+                    className="nav_list"
+                  >
+                    Blog
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    activeClassName="text-primary"
                     to="/about"
                     className="nav_list"
                   >

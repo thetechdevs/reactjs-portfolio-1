@@ -11,7 +11,7 @@ const Home = () => {
         <Hero />
         <CommentOfClient />
         <Service />
-        <BlogPage />
+        {/* <BlogPage /> */}
       </Layout>
     </div>
   );
