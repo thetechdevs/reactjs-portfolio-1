@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../Layout";
+import BlogPage from "./BlogPage/BlogPage";
 import Hero from "./HeroArea/Hero";
 import Service from "./Service";
 import { CommentOfClient } from "./index";
@@ -10,6 +11,7 @@ const Home = () => {
         <Hero />
         <CommentOfClient />
         <Service />
+        <BlogPage />
       </Layout>
     </div>
   );
