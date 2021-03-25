@@ -6,13 +6,13 @@ import {
   TextareaAutosize,
   TextField,
   Typography,
+  Container,
 } from "@material-ui/core";
 import React from "react";
 import { Layout } from "../Home";
 import "./Contact.scss";
 import phoneImg from "../../assets/image/phone_social.png";
 import PhoneIcon from "@material-ui/icons/Phone";
-import { Container } from "react-bootstrap";
 import LanguageIcon from "@material-ui/icons/Language";
 import EmailIcon from "@material-ui/icons/Email";
 const Contact = () => {
@@ -28,7 +28,7 @@ const Contact = () => {
       </Grid>
       <div style={{ backgroundColor: "#e4eeff", padding: "60px 0" }}>
         <Container>
-          <Grid container item md={12}>
+          <Grid container item md={12} className="contact_form_wrapper">
             <Grid item md={6} sm={6} xs={12}>
               <div
                 style={{
@@ -39,10 +39,17 @@ const Contact = () => {
                   src={phoneImg}
                   alt="contact page"
                   style={{ width: "30%" }}
+                  className="contact__img"
                 />
               </div>
-              <Grid container item md={12} style={{ padding: "30px 0" }}>
-                <Grid item md={6} sm={12} xs={12}>
+              <Grid
+                container
+                item
+                md={12}
+                style={{ padding: "30px 0" }}
+                className="address_wrapper"
+              >
+                <Grid item md={6} sm={12} xs={6} id="address__form">
                   <Typography
                     variant="h6"
                     style={{ margin: "10px 0", fontWeight: "600" }}
@@ -56,7 +63,7 @@ const Contact = () => {
                     Dhaka , Bangladesh
                   </Typography>
                 </Grid>
-                <Grid item md={6} sm={12} xs={12}>
+                <Grid item md={6} sm={12} xs={6} id="phone__form">
                   <Typography
                     variant="h6"
                     style={{ margin: "10px 0", fontWeight: "600" }}
@@ -93,7 +100,12 @@ const Contact = () => {
               </Grid>
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
-              <Card>
+              <Card
+                style={{
+                  borderRadius: "15px",
+                  boxShadow: " 0 17px 40px 0 rgba(75, 128, 182, 0.07) ",
+                }}
+              >
                 <CardContent style={{ padding: "30px" }}>
                   <form>
                     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -124,7 +136,7 @@ const Contact = () => {
                           aria-label="minimum height"
                           rowsMin={3}
                           placeholder="Message"
-                          style={{ width: "100%" }}
+                          style={{ width: "100%", padding: "10px" }}
                         />
                       </div>
                       <Button
@@ -136,7 +148,7 @@ const Contact = () => {
                           width: "100%",
                           borderRadius: "30px",
                           fontSize: "16px",
-                          padding: "15px",
+                          padding: "12px",
                           boxShadow: "0px 15px 18px #f9bb008c",
                         }}
                       >

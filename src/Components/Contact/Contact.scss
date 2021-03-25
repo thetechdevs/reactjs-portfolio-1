@@ -1,3 +1,9 @@
+.contact__img {
+  @media screen and (max-width: 599px) {
+    display: none !important;
+  }
+}
+
 .contact_info {
   padding: 50px 0;
   background: linear-gradient(90deg, #0f0330, #110833);
@@ -7,4 +13,28 @@
   align-items: center;
   flex-direction: column;
   color: #fff;
+}
+.contact_form_wrapper {
+  @media screen and (max-width: 599px) {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .address_wrapper {
+    @media screen and (max-width: 450px) {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      width: 100% !important;
+    }
+
+    #address__form {
+      @media screen and (max-width: 450px) {
+        width: 100% !important;
+      }
+    }
+    #phone__form {
+      @media screen and (max-width: 450px) {
+        width: 100% !important;
+      }
+    }
+  }
 }
