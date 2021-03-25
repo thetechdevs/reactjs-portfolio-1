@@ -91,13 +91,8 @@ const Footer = () => {
                 <div className={FooterStyle.footer__option}>
                   <a href="/">Service</a>
                   <a href="/">Portfolio</a>
-                  <a href="/">Pricing</a>
                   <a href="/">Testimonials</a>
-                  <a href="/">Team</a>
                   <a href="/">Blog</a>
-                  <a href="/">Career</a>
-                  <a href="/">How we Work</a>
-                  <a href="/">Manifesto</a>
                 </div>
                 <div className={FooterStyle.footer__Contact__Content}>
                   <IoPhonePortraitSharp />
