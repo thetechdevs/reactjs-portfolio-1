@@ -1,0 +1,33 @@
+// smart sticky header
+#menu_wrapper {
+  position: sticky;
+  top: -1px;
+  //   font-size: 3em;
+  transition: 0.2s ease-out;
+  &.isSticky {
+    z-index: 9999;
+    .custom_menu {
+      background-color: #eef3fe !important;
+    }
+  }
+}
+
+.custom_menu {
+  //   padding: 0 !important;
+  //   margin: 0 !important;
+  .container {
+    .menu_wrapper {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      text-decoration: none;
+      margin: 0;
+      .nav_list {
+        margin: 0 40px;
+        color: #000;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
