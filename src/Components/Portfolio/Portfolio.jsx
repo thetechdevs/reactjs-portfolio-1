@@ -8,7 +8,7 @@ const Portfolio = () => {
   return (
     <Layout>
       <Container>
-        <Grid container item md={12} spacing={3} style={{ padding: "30px 0" }}>
+        <Grid container item md={12} style={{ padding: "30px 0" }}>
           <SinglePortfolio data={portfolios} />
         </Grid>
       </Container>

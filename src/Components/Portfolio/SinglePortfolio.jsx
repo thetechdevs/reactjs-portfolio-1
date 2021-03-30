@@ -18,6 +18,7 @@ const SinglePortfolio = ({ data }) => {
         style={{
           display: "flex",
           alignItems: "center",
+          margin: "auto",
         }}
         className="portfolio_wrapper"
       >
