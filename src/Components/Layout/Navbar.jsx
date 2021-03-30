@@ -55,7 +55,7 @@ const NavBar = ({ children, sticky = false, className, ...rest }) => {
                   <li>
                     <NavLink
                       activeClassName="text-primary"
-                      to="/project"
+                      to="/portfolio"
                       className="nav_list"
                       style={{ textDecoration: "none", color: "#000" }}
                     >
