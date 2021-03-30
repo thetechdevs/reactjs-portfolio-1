@@ -1,4 +1,4 @@
-import { Container, Grid } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import FooterStyle from "./Footer.module.scss";
@@ -20,28 +20,35 @@ const Footer = () => {
             <Row>
               <Col xs={12} sm={6} md={6} lg={3}>
                 <div className={FooterStyle.footer__headContent_info__IconMain}>
-                  <h4>itCart</h4>
+                  <Typography variant="h5" style={{ marginBottom: "15px" }}>
+                    itCart
+                  </Typography>
                   <p>Copyright &copy;2021 itCart</p>
                 </div>
               </Col>
               <Col xs={12} sm={6} md={6} lg={2}>
                 <div className={FooterStyle.footer__headContent_info}>
-                  <h4>byddhfgd553</h4>
+                  <Typography variant="h5" style={{ marginBottom: "15px" }}>
+                    Contact
+                  </Typography>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                 </div>
               </Col>
               <Col xs={12} sm={6} md={6} lg={2}>
-                {" "}
                 <div className={FooterStyle.footer__headContent_info}>
-                  <h4>TORUN</h4>
+                  <Typography variant="h5" style={{ marginBottom: "15px" }}>
+                    TORUN
+                  </Typography>
                   <p>Time zone Squar , New Yeark 2056</p>
                 </div>
               </Col>
               <Col xs={12} sm={6} md={6} lg={2}>
                 <div className={FooterStyle.footer__headContent_info}>
-                  <h4>warsaw</h4>
+                  <Typography variant="h5" style={{ marginBottom: "15px" }}>
+                    warsaw
+                  </Typography>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Harum,
@@ -50,7 +57,9 @@ const Footer = () => {
               </Col>
               <Col xs={12} sm={6} md={6} lg={2}>
                 <div className={FooterStyle.footer__headContent_info}>
-                  <h4>London </h4>
+                  <Typography variant="h5" style={{ marginBottom: "15px" }}>
+                    London
+                  </Typography>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sit, adipisci.
@@ -59,7 +68,9 @@ const Footer = () => {
               </Col>
               <Col xs={12} sm={6} md={6} lg={1}>
                 <div className={FooterStyle.footer__headContent_info}>
-                  <h4>Norway</h4>
+                  <Typography variant="h5" style={{ marginBottom: "15px" }}>
+                    Norway
+                  </Typography>
                   <p>Kisoregonj</p>
                 </div>
               </Col>

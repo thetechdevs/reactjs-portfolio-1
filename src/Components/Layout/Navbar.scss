@@ -2,7 +2,6 @@
 #menu_wrapper {
   position: sticky;
   top: -1px;
-  //   font-size: 3em;
   transition: 0.2s ease-out;
   &.isSticky {
     z-index: 9999;
@@ -13,8 +12,6 @@
 }
 
 .custom_menu {
-  //   padding: 0 !important;
-  //   margin: 0 !important;
   .container {
     .menu_wrapper {
       display: flex;
@@ -22,11 +19,19 @@
       list-style: none;
       text-decoration: none;
       margin: 0;
-      .nav_list {
-        margin: 0 40px;
-        color: #000;
-        font-size: 16px;
-        text-transform: capitalize;
+      @media screen and (max-width: 991px) {
+        flex-direction: column !important;
+      }
+      li {
+        @media screen and (max-width: 991px) {
+          margin: 15px 0 !important;
+        }
+        .nav_list {
+          margin: 0 40px;
+          color: #000;
+          font-size: 16px;
+          text-transform: capitalize;
+        }
       }
     }
   }

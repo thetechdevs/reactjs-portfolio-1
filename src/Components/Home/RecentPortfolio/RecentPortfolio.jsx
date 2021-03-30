@@ -1,92 +1,65 @@
-import RecentPortfolioCard from './RecentPortfolioCard/RecentPortfolioCard';
-// import CSS 
-import './RecentPortfolio.css';
-// import dummyData
-import recentProjects from '../../../dummyData/recentProjects/recentProjects';
-// import swiper
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import SCSS for carousel
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/scrollbar/scrollbar.scss';
+import RecentPortfolioCard from "./RecentPortfolioCard/RecentPortfolioCard";
+// import "./RecentPortfolio.css";
+import recentProjects from "../../../dummyData/recentProjects/recentProjects";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { Container, Grid, Typography } from "@material-ui/core";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 600 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 600, min: 0 },
+    items: 1,
+  },
+};
+
 const RecentPortfolio = () => {
-    return (
-        <div className="container-fluid py-5">
-            <div className="container text-center" style={{ color: "#270D3D" }}>
-                <h3 className="section-title font-weight-bold">Recent Project</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit provident maiores veniam eveniet molestias sint perferendis labore, dicta cumque inventore reprehenderit nesciunt totam rerum cum tempore impedit a unde sunt!</p>
+  return (
+    <Container>
+      <div className="container-fluid" style={{ margin: "30px 0" }}>
+        <div className="container text-center" style={{ color: "#270D3D" }}>
+          <Typography variant="h4" style={{ margin: "10px 0" }}>
+            Recent{" "}
+            <span style={{ color: "#f6ca00", marginLeft: "6px" }}>
+              {" "}
+              Project{" "}
+            </span>
+          </Typography>
+          <Typography variant="subtitle1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            provident <br /> maiores veniam eveniet molestias sint perferendis
+            labore
+          </Typography>
+        </div>
+
+        <Carousel
+          responsive={responsive}
+          autoPlay={true}
+          autoPlaySpeed={1000}
+          infinite
+          keyBoardControl
+        >
+          {recentProjects.map((review) => (
+            <div key={review.id} style={{ margin: "30px 0" }}>
+              <RecentPortfolioCard review={review} />
             </div>
-            <Swiper
-                spaceBetween={25}
-                slidesPerView={recentProjects.length === 1 ? 1 : recentProjects.length === 2 ? 2 : 3}
-                loop
-                loopFillGroupWithBlank
-                autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false
-                }}
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => ''}
-                onSlideChange={() => ''}
-                breakpoints={{
-                    // when window width is >= 280px
-                    280: {
-                        width: 280,
-                        slidesPerView: 1
-                    },
-                    // when window width is >= 320px
-                    320: {
-                        width: 320,
-                        slidesPerView: 1
-                    },
-                    // when window width is >= 360px
-                    360: {
-                        width: 360,
-                        slidesPerView: 1
-                    },
-                    // when window width is >= 411px
-                    411: {
-                        width: 411,
-                        slidesPerView: 1
-                    },
-                    // when window width is >= 375px
-                    375: {
-                        width: 375,
-                        slidesPerView: 1
-                    },
-                    // when window width is >= 520px
-                    520: {
-                        width: 520,
-                        slidesPerView: 1
-                    },
-                    // when window width is >= 768px
-                    768: {
-                        width: 768,
-                        slidesPerView: 2
-                    },
-                    // when window width is >= 1024px
-                    1024: {
-                        width: 1024,
-                        slidesPerView: 3
-                    }
-                }}
-            >
-                {
-                    recentProjects.map(review => (
-                        <SwiperSlide key={review.id}>
-                            <div className="m-auto">
-                                <RecentPortfolioCard review={review} />
-                            </div>
-                        </SwiperSlide>
-                    ))
-                }
-            </Swiper>
-        </div >
-    );
+          ))}
+        </Carousel>
+      </div>
+    </Container>
+  );
 };
 
 export default RecentPortfolio;
