@@ -1,3 +1,8 @@
+// import components
+import { Layout } from "../Home";
+import "./Contact.scss";
+
+// import packages
 import {
   Button,
   Card,
@@ -7,14 +12,12 @@ import {
   TextField,
   Typography,
   Container,
-} from "@material-ui/core";
-import React from "react";
-import { Layout } from "../Home";
-import "./Contact.scss";
-import phoneImg from "../../assets/image/phone_social.png";
-import PhoneIcon from "@material-ui/icons/Phone";
-import LanguageIcon from "@material-ui/icons/Language";
-import EmailIcon from "@material-ui/icons/Email";
+  phoneImg,
+  PhoneIcon,
+  LanguageIcon,
+  EmailIcon,
+} from "./index";
+
 const Contact = () => {
   return (
     <Layout>

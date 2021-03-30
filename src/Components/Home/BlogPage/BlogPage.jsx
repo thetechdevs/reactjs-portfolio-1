@@ -6,10 +6,10 @@ import { Row, Col } from "react-bootstrap";
 import BlogImage from "../../../assets/image/blog.png";
 // import CSS
 import "./BlogPage.css";
-// import dummyData
-import blogPosts from "../../../dummyData/DummyData";
 import { Card, CardContent, Container, Typography } from "@material-ui/core";
 import Layout from "../../Layout";
+// import dummyData
+import blogPosts from "../../../dummyData/DummyData";
 
 const BlogPage = () => {
   return (
@@ -79,20 +79,6 @@ const BlogPosts = () => {
                   </Typography>
                 </CardContent>
               </Card>
-              {/* <Card style={{ backgroundColor: "#E5E6EB", border: "none" }}>
-                <div style={{ overflow: "hidden" }}>
-                  <img className="blog_image" src={blog.image} alt="" />
-                </div>
-                <Card.Body style={{ padding: "20px 0px 0px 0px" }}>
-                  <small className="text-muted">{blog.date}</small>
-                  <p className="blog_title">
-                    {blog.blog_title.substring(0, 25) + ".."}
-                  </p>
-                  <p className="text-muted">
-                    {blog.description.substring(0, 120) + ".."}
-                  </p>
-                </Card.Body>
-              </Card> */}
             </div>
           </Col>
         ))}

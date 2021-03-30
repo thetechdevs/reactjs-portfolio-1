@@ -136,13 +136,4 @@ const About = () => {
   );
 };
 
-// function AboutMe() {
-//   return (
-//     <div>
-//       <h1>ABOUT ME</h1>
-//       <div className="UnderLine"></div>
-//     </div>
-//   );
-// }
-
 export default About;

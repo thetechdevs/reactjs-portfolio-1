@@ -1,6 +1,7 @@
 import { Button, Grid, Hidden, Typography } from "@material-ui/core";
 import heroImg from "../../../assets/hero/pngtree-background-shape.png";
 import "./Hero.scss";
+
 const HeroArea = () => {
   return (
     <Grid container item md={12} xl={12} xs={12}>

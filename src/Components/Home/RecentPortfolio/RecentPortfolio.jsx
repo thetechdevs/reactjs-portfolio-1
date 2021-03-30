@@ -3,7 +3,7 @@ import RecentPortfolioCard from "./RecentPortfolioCard/RecentPortfolioCard";
 import recentProjects from "../../../dummyData/recentProjects/recentProjects";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Container, Typography } from "@material-ui/core";
 
 const responsive = {
   superLargeDesktop: {
