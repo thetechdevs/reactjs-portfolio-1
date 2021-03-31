@@ -24,34 +24,9 @@
   }
 }
 
-// .portfolio_wrapper {
-//   @media screen and (max-width: 599px) {
-//     justify-content: center !important;
-//     margin-top: 15px !important;
-//   }
-//   .portfolioCards {
-//     position: relative;
-//     .portfolioCardHover {
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       right: 0;
-//       bottom: 0;
-//       background: linear-gradient(
-//         90deg,
-//         rgba(0, 0, 0, 0.329),
-//         rgba(0, 0, 0, 0.308)
-//       );
-//       padding: 0 30px;
-//       color: #fff;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       opacity: 0;
-//       transition: all 1s ease-in-out;
-//       &:hover {
-//         opacity: 1;
-//       }
-//     }
-//   }
-// }
+.portfolio_wrapper {
+  @media screen and (max-width: 599px) {
+    justify-content: center !important;
+    margin-top: 15px !important;
+  }
+}

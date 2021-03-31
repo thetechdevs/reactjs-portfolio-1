@@ -26,6 +26,7 @@ const Portfolio = () => {
             alignItems: "center",
             margin: "auto",
           }}
+          className="portfolio_wrapper"
         >
           {total ? (
             <>

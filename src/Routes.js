@@ -3,6 +3,7 @@ import Contact from "./Components/Contact/Contact";
 import About from "./Components/Home/About";
 import BlogPage from "./Components/Home/BlogPage/BlogPage";
 import Home from "./Components/Home/Home";
+import NotFound from "./Components/NotFound/NotFound";
 import Portfolio from "./Components/Portfolio/Portfolio";
 
 const Routes = () => {
@@ -15,7 +16,7 @@ const Routes = () => {
         <Route path="/blog" component={BlogPage} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="*">
-          <h1>404 Page Not Found</h1>
+          <NotFound />
         </Route>
       </Switch>
     </Router>
