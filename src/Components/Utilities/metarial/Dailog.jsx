@@ -59,9 +59,7 @@ const Dialogs = ({ openBtn, btnText, children, title }) => {
   return (
     <div>
       {btnText ? (
-        <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-          {btnText}
-        </Button>
+        <div onClick={handleClickOpen}>{btnText}</div>
       ) : (
         <Link onClick={handleClickOpen}>{openBtn}</Link>
       )}

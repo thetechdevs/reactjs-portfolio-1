@@ -1,97 +1,57 @@
-import { Button, Card, CardMedia, Grid, Typography } from "@material-ui/core";
-import React, { useState } from "react";
-import LastPageIcon from "@material-ui/icons/LastPage";
+import { Card, CardMedia, Grid, Typography } from "@material-ui/core";
+import React from "react";
 import "./Portfolio.scss";
-const SinglePortfolio = ({ data }) => {
-  const [total, setTotal] = useState(false);
+import Dialogs from "../Utilities/metarial/Dailog";
 
-  const handleClick = () => {
-    setTotal(true);
-  };
+const SinglePortfolio = ({ data }) => {
+  const portfolioCard = (
+    <Card className="portfolioCards">
+      <CardMedia
+        component="img"
+        height="350"
+        image={data.image}
+        alt="My Portfolio"
+        title="My Portfolio"
+      />
+      <div className="portfolioCardHover">
+        <Typography variant="h6" style={{ fontWeight: "700" }}>
+          {data.name}
+        </Typography>
+        <Typography variant="subtitle1">{data.category}</Typography>
+      </div>
+    </Card>
+  );
+
+  const dialogPortfolio = (
+    <div>
+      <div
+        style={{ display: "flex", justifyContent: "center", height: "180px" }}
+      >
+        <img
+          src={"https://i.ibb.co/Wf1HVc3/car3.jpg"}
+          alt="project images"
+          style={{ height: "100%", borderRadius: "50%" }}
+        />
+      </div>
+      <Typography variant="h6" color="initial" style={{ fontWeight: "600" }}>
+        {data.name}
+      </Typography>
+      <Typography variant="subtitle2" color="initial">
+        {data.category}
+      </Typography>
+      <Typography variant="subtitle2" color="initial">
+        {data.description}
+      </Typography>
+    </div>
+  );
+
   return (
     <React.Fragment>
-      <Grid
-        container
-        item
-        md={12}
-        spacing={3}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          margin: "auto",
-        }}
-        className="portfolio_wrapper"
-      >
-        {total ? (
-          <>
-            {data &&
-              data.map((el) => (
-                <Grid item md={4} sm={6} xs={12} key={el.id}>
-                  <Card className="portfolioCard">
-                    <CardMedia
-                      component="img"
-                      height="350"
-                      image={el.image}
-                      alt="My Portfolio"
-                      title="My Portfolio"
-                    />
-                    <div className="portfolioCardHover">
-                      <Typography variant="h6" style={{ fontWeight: "700" }}>
-                        {el.name}
-                      </Typography>
-                      <Typography variant="subtitle1">{el.category}</Typography>
-                    </div>
-                  </Card>
-                </Grid>
-              ))}
-          </>
-        ) : (
-          <>
-            {data &&
-              data.slice(0, 7).map((el) => (
-                <Grid item md={4} sm={6} xs={12} key={el.id}>
-                  <Card className="portfolioCard">
-                    <CardMedia
-                      component="img"
-                      height="350"
-                      image={el.image}
-                      alt="My Portfolio"
-                      title="My Portfolio"
-                    />
-                    <div className="portfolioCardHover">
-                      <Typography variant="h6" style={{ fontWeight: "700" }}>
-                        {el.name}
-                      </Typography>
-                      <Typography variant="subtitle1">{el.category}</Typography>
-                    </div>
-                  </Card>
-                </Grid>
-              ))}
-          </>
-        )}
-        {!total && (
-          <div>
-            <Button
-              variant="contained"
-              onClick={handleClick}
-              style={{
-                backgroundColor: "#f9bb00",
-                textTransform: "capitalize",
-                width: "150px",
-                borderRadius: "30px",
-                fontSize: "16px",
-                boxShadow: "0px 15px 18px #f9bb008c",
-                color: "#fff",
-              }}
-            >
-              View All{" "}
-              <span style={{ marginLeft: "6px" }}>
-                <LastPageIcon />{" "}
-              </span>
-            </Button>
-          </div>
-        )}
-      </Grid>
+      <Dialogs
+        btnText={portfolioCard}
+        title="Portfolio Project Details"
+        children={dialogPortfolio}
+      />
     </React.Fragment>
   );
 };
