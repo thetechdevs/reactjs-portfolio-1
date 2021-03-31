@@ -1,3 +1,4 @@
+import Dialogs from "../metarial/Dailog";
 import ServiceCardStyle from "./ServiceCard.module.scss";
 
 const ServiceCard = ({ icon, title }) => {
@@ -12,7 +13,8 @@ const ServiceCard = ({ icon, title }) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
           tempora aut amet distinctio .
         </p>
-        <a href="/">View Project</a>
+
+        <Dialogs openBtn={"View Project"} title="Project Details" />
       </div>
     </div>
   );

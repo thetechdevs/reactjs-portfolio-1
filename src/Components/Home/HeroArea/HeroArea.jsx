@@ -1,4 +1,5 @@
 import { Button, Grid, Hidden, Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import heroImg from "../../../assets/hero/pngtree-background-shape.png";
 import "./Hero.scss";
 
@@ -16,21 +17,23 @@ const HeroArea = () => {
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s,
           </Typography>
-          <Button
-            className="colorButton"
-            variant="contained"
-            color="primary"
-            style={{
-              backgroundColor: "#f9bb00",
-              textTransform: "capitalize",
-              width: "120px",
-              borderRadius: "30px",
-              fontSize: "16px",
-              boxShadow: "0px 15px 18px #f9bb008c",
-            }}
-          >
-            Hire Me
-          </Button>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
+            <Button
+              className="colorButton"
+              variant="contained"
+              color="primary"
+              style={{
+                backgroundColor: "#f9bb00",
+                textTransform: "capitalize",
+                width: "120px",
+                borderRadius: "30px",
+                fontSize: "16px",
+                boxShadow: "0px 15px 18px #f9bb008c",
+              }}
+            >
+              Hire Me
+            </Button>
+          </Link>
         </div>
       </Grid>
       <Grid item md={6} sm={6} xs={12}>

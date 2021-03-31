@@ -32,7 +32,9 @@ const NavBar = ({ children, sticky = false, className, ...rest }) => {
       <Navbar className="bg-transparent custom_menu" expand="lg">
         <div className="container" style={{ maxWidth: "1300px" }}>
           <Navbar.Brand style={{ float: "left" }}>
-            <h2>SREE</h2>
+            <Link to="/" style={{ textDecoration: "none", color: "#f9bb008c" }}>
+              <h2>SREE</h2>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse

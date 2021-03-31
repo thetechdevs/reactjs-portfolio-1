@@ -3,7 +3,9 @@ import Layout from "../Layout";
 import RecentPortfolio from "./RecentPortfolio/RecentPortfolio";
 import Hero from "./HeroArea/Hero";
 import Service from "./Service";
-import { CommentOfClient } from "./index";
+import CommentOfClient from "./CommentOfClient/CommentOfClient";
+// import { CommentOfClient } from "./index";
+// import About from "./About";
 
 const Home = () => {
   return (
