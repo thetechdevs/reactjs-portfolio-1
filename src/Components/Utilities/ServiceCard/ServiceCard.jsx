@@ -9,9 +9,9 @@ const ServiceCard = ({ icon, title }) => {
         style={{ display: "flex", justifyContent: "center", height: "180px" }}
       >
         <img
-          src={"https://i.ibb.co/Wf1HVc3/car3.jpg"}
+          src={"https://i.ibb.co/3WDft7n/404.png"}
           alt="project images"
-          style={{ height: "100%", borderRadius: "50%" }}
+          style={{ height: "100%", borderRadius: "10%" }}
         />
       </div>
       <Typography variant="h6" color="initial" style={{ fontWeight: "600" }}>

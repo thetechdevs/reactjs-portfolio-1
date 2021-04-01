@@ -1,21 +1,29 @@
 import { Button, Grid, Hidden, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import heroImg from "../../../assets/hero/pngtree-background-shape.png";
+import heroImg from "../../../assets/image/gril3.jpg";
 import "./Hero.scss";
+import Typical from "react-typical";
 
 const HeroArea = () => {
   return (
-    <Grid container item md={12} xl={12} xs={12}>
+    <Grid container item md={12} xl={12} xs={12} style={{ padding: "30px 0" }}>
       <Grid item md={6} sm={6} xs={12}>
         <div style={{ marginTop: "50px", paddingBottom: "30px" }}>
           <Typography variant="h2">
-            Hy! I am <br />
-            <span style={{ color: "#f9bb00" }}>Sree Sonjoy</span>
+            Hay! I am <br />
+            <span style={{ color: "#f9bb00" }}>
+              <Typical
+                steps={["Sree Sonjoy ", 1000, "Software Developer", 1500]}
+                loop={Infinity}
+                wrapper="h1"
+              />
+            </span>
           </Typography>
           <Typography variant="body1" style={{ margin: "25px 0" }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
+            industry. <br />
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s,
           </Typography>
           <Link to="/contact" style={{ textDecoration: "none" }}>
             <Button
@@ -39,7 +47,7 @@ const HeroArea = () => {
       <Grid item md={6} sm={6} xs={12}>
         <Hidden xsDown>
           <div style={{ width: "100%" }}>
-            <img src={heroImg} alt="portfolio" style={{ width: "90%" }} />
+            <img src={heroImg} alt="portfolio" style={{ width: "75%" }} />
           </div>
         </Hidden>
       </Grid>

@@ -1,4 +1,4 @@
-import { Card, CardMedia, Grid, Typography } from "@material-ui/core";
+import { Card, CardMedia, Typography } from "@material-ui/core";
 import React from "react";
 import "./Portfolio.scss";
 import Dialogs from "../Utilities/metarial/Dailog";
@@ -28,15 +28,19 @@ const SinglePortfolio = ({ data }) => {
         style={{ display: "flex", justifyContent: "center", height: "180px" }}
       >
         <img
-          src={"https://i.ibb.co/Wf1HVc3/car3.jpg"}
+          src={data.image}
           alt="project images"
-          style={{ height: "100%", borderRadius: "50%" }}
+          style={{ height: "100%", borderRadius: "10%" }}
         />
       </div>
       <Typography variant="h6" color="initial" style={{ fontWeight: "600" }}>
         {data.name}
       </Typography>
-      <Typography variant="subtitle2" color="initial">
+      <Typography
+        variant="subtitle1"
+        color="initial"
+        style={{ fontWeight: "500" }}
+      >
         {data.category}
       </Typography>
       <Typography variant="subtitle2" color="initial">

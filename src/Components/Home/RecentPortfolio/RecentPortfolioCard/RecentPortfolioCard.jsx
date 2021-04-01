@@ -13,7 +13,7 @@ const RecentPortfolioCard = ({ review }) => {
         height="400"
         image={review.img}
         title="My Recent Projects"
-        style={{ border: "none", outline: "none" }}
+        style={{ border: "none", outline: "none", width: "100%" }}
         className="recentPortfolioImg"
       />
     </Card>

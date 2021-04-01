@@ -22,19 +22,19 @@ const CommentOfClient = () => {
         </div>
         <Row className="justify-content-center">
           <div className="dropbox_icon d-flex align-items-center justify-content-center">
-            <FaDropbox size="45px" color="#2196F3" />
+            <FaDropbox size="45px" color="#2196F3" className="commentIcon" />
           </div>
           <div className="google_icon d-flex align-items-center justify-content-center">
-            <FcGoogle size="45px" />
+            <FcGoogle size="45px" className="commentIcon" />
           </div>
           <div className="slack_icon d-flex align-items-center justify-content-center">
-            <SiSlack size="45px" />
+            <SiSlack size="45px" className="commentIcon" />
           </div>
           <div className="filePdf_icon d-flex align-items-center justify-content-center">
-            <GoFilePdf size="45px" color="red" />
+            <GoFilePdf size="45px" color="red" className="commentIcon" />
           </div>
           <div className="spotify_icon d-flex align-items-center justify-content-center">
-            <FaSpotify size="45px" color="#8CBA4C" />
+            <FaSpotify size="45px" color="#8CBA4C" className="commentIcon" />
           </div>
         </Row>
       </Container>

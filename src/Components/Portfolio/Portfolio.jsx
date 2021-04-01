@@ -1,16 +1,26 @@
 import { Grid, Container, Button } from "@material-ui/core";
 import { portfolios } from "../../dummyData/portfolio";
 import Layout from "../Layout/index";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LastPageIcon from "@material-ui/icons/LastPage";
 import "./Portfolio.scss";
 import SinglePortfolio from "./SinglePortfolio";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  AOS.init({
+    duration: 1500,
+    offset: 80,
+  });
   const [total, setTotal] = useState(false);
   const handleClick = () => {
     setTotal(true);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Layout>
@@ -24,7 +34,6 @@ const Portfolio = () => {
             padding: "30px 0",
             display: "flex",
             alignItems: "center",
-            margin: "auto",
           }}
           className="portfolio_wrapper"
         >
@@ -32,7 +41,15 @@ const Portfolio = () => {
             <>
               {portfolios &&
                 portfolios.map((portfolios) => (
-                  <Grid item md={4} sm={6} xs={12} key={portfolios.id}>
+                  <Grid
+                    item
+                    md={4}
+                    sm={6}
+                    xs={12}
+                    key={portfolios.id}
+                    style={{ cursor: "pointer" }}
+                    data-aos="fade-up"
+                  >
                     <SinglePortfolio data={portfolios} />
                   </Grid>
                 ))}
@@ -41,7 +58,15 @@ const Portfolio = () => {
             <>
               {portfolios &&
                 portfolios.slice(0, 7).map((portfolios) => (
-                  <Grid item md={4} sm={6} xs={12} key={portfolios.id}>
+                  <Grid
+                    item
+                    md={4}
+                    sm={6}
+                    xs={12}
+                    key={portfolios.id}
+                    style={{ cursor: "pointer" }}
+                    data-aos="fade-up"
+                  >
                     <SinglePortfolio data={portfolios} />
                   </Grid>
                 ))}

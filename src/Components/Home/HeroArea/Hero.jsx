@@ -4,11 +4,11 @@ import HeroArea from "./HeroArea";
 
 const Hero = () => {
   return (
-    <div className="hero_bg">
+    <section className="hero_bg">
       <Container>
         <HeroArea />
       </Container>
-    </div>
+    </section>
   );
 };
 

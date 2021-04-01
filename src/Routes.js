@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from "./Components/Contact/Contact";
-import About from "./Components/Home/About";
-import BlogPage from "./Components/Home/BlogPage/BlogPage";
+import About from "./Components/About/About";
+import BlogPage from "./Components/BlogPage/BlogPage";
 import Home from "./Components/Home/Home";
 import NotFound from "./Components/NotFound/NotFound";
 import Portfolio from "./Components/Portfolio/Portfolio";

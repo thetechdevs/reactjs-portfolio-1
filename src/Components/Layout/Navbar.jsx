@@ -1,10 +1,11 @@
 import { React, createRef, useState, useEffect } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Button } from "@material-ui/core";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./Navbar.scss";
 
 const NavBar = ({ children, sticky = false, className, ...rest }) => {
+  const location = useLocation();
   const [isSticky, setIsSticky] = useState(false);
   const ref = createRef();
 
@@ -21,7 +22,6 @@ const NavBar = ({ children, sticky = false, className, ...rest }) => {
       observer.unobserve(cachedRef);
     };
   }, []);
-
   return (
     <div
       id="menu_wrapper"
@@ -32,8 +32,13 @@ const NavBar = ({ children, sticky = false, className, ...rest }) => {
       <Navbar className="bg-transparent custom_menu" expand="lg">
         <div className="container" style={{ maxWidth: "1300px" }}>
           <Navbar.Brand style={{ float: "left" }}>
-            <Link to="/" style={{ textDecoration: "none", color: "#f9bb008c" }}>
-              <h2>SREE</h2>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <h2 style={{ color: "#f6ca00", fontWeight: "700" }}>DEVS4</h2>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -43,16 +48,20 @@ const NavBar = ({ children, sticky = false, className, ...rest }) => {
           >
             <Nav className="ml-auto">
               <ul className="menu_wrapper">
-                <li>
-                  <NavLink
-                    activeClassName="text-primary"
-                    to="/"
-                    className="nav_list"
-                    style={{ textDecoration: "none", color: "#000" }}
-                  >
-                    Home
-                  </NavLink>
-                </li>
+                {location.pathname !== "/" && (
+                  <li>
+                    <NavLink
+                      activeClassName={
+                        location.pathname === "/" ? "text-primary" : null
+                      }
+                      to="/"
+                      className="nav_list"
+                      style={{ textDecoration: "none", color: "#000" }}
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                )}
                 <li>
                   <NavLink
                     activeClassName="text-primary"

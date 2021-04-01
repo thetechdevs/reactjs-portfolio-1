@@ -1,46 +1,72 @@
-.dropbox_icon{
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    background-color: #E7F4FF;
-    margin: 25px 20px;
-    cursor: pointer;
+.dropbox_icon,
+.google_icon,
+.slack_icon,
+.filePdf_icon,
+.spotify_icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #e7f4ff;
+  margin: 25px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-.google_icon{
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    background-color: #FFEBCF;
-    margin: 25px 20px;
-    cursor: pointer;
+.dropbox_icon {
+  background-color: #e7f4ff;
 }
-.slack_icon{
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    background-color: #EEE8FF;
-    margin: 25px 20px;
-    cursor: pointer;
+.dropbox_icon:hover {
+  background-color: #eff0ff;
 }
-.filePdf_icon{
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    background-color: #FFF1C5;
-    margin: 25px 20px;
-    cursor: pointer;
+.google_icon {
+  background-color: #ffebcf;
 }
-.spotify_icon{
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    background-color: #EEE0BA;
-    margin: 25px 20px;
-    cursor: pointer;
+.google_icon:hover {
+  background-color: #eff0ff;
+}
+.slack_icon {
+  background-color: #eee8ff;
+}
+.slack_icon:hover {
+  background-color: #eff0ff;
+}
+.filePdf_icon {
+  background-color: #fff1c5;
+}
+.filePdf_icon:hover {
+  background-color: #eff0ff;
+}
+.spotify_icon {
+  background-color: #eee0ba;
+}
+.spotify_icon:hover {
+  background-color: #eff0ff;
+}
+.commentIcon {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.dropbox_icon:hover .commentIcon {
+  transform: scale(1.1);
+}
+.google_icon:hover .commentIcon {
+  transform: scale(1.1);
+}
+.slack_icon:hover .commentIcon {
+  transform: scale(1.1);
+}
+.filePdf_icon:hover .commentIcon {
+  transform: scale(1.1);
+}
+.spotify_icon:hover .commentIcon {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
-    .dropbox_icon, .google_icon, .slack_icon, .filePdf_icon, .spotify_icon{
-        margin: 20px 20px 15px 20px;
-    }
+  .dropbox_icon,
+  .google_icon,
+  .slack_icon,
+  .filePdf_icon,
+  .spotify_icon {
+    margin: 20px 20px 15px 20px;
   }
+}

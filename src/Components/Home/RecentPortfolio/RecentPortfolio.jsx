@@ -27,38 +27,39 @@ const responsive = {
 
 const RecentPortfolio = () => {
   return (
-    <Container>
-      <div className="container-fluid" style={{ margin: "30px 0" }}>
-        <div className="container text-center" style={{ color: "#270D3D" }}>
-          <Typography variant="h4" style={{ margin: "10px 0" }}>
-            Recent{" "}
-            <span style={{ color: "#f6ca00", marginLeft: "6px" }}>
-              {" "}
-              Project{" "}
-            </span>
-          </Typography>
-          <Typography variant="subtitle1">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-            provident <br /> maiores veniam eveniet molestias sint perferendis
-            labore
-          </Typography>
-        </div>
+    <section>
+      <Container>
+        <div className="container-fluid" style={{ margin: "30px 0" }}>
+          <div className="container text-center" style={{ color: "#270D3D" }}>
+            <Typography variant="h4" style={{ margin: "10px 0" }}>
+              Recent
+              <span style={{ color: "#f6ca00", marginLeft: "6px" }}>
+                Project
+              </span>
+            </Typography>
+            <Typography variant="subtitle1">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+              provident <br /> maiores veniam eveniet molestias sint perferendis
+              labore
+            </Typography>
+          </div>
 
-        <Carousel
-          responsive={responsive}
-          autoPlay={true}
-          autoPlaySpeed={1000}
-          infinite
-          keyBoardControl
-        >
-          {recentProjects.map((review) => (
-            <div key={review.id} style={{ margin: "30px 0" }}>
-              <RecentPortfolioCard review={review} />
-            </div>
-          ))}
-        </Carousel>
-      </div>
-    </Container>
+          <Carousel
+            responsive={responsive}
+            autoPlay={true}
+            autoPlaySpeed={1000}
+            infinite
+            keyBoardControl
+          >
+            {recentProjects.map((review) => (
+              <div key={review.id} style={{ margin: "30px 0" }}>
+                <RecentPortfolioCard review={review} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </Container>
+    </section>
   );
 };
 

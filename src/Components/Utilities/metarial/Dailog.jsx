@@ -7,7 +7,6 @@ import MuiDialogContent from "@material-ui/core/DialogContent";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Typography from "@material-ui/core/Typography";
-import { Link } from "react-router-dom";
 
 const styles = (theme) => ({
   root: {
@@ -61,7 +60,9 @@ const Dialogs = ({ openBtn, btnText, children, title }) => {
       {btnText ? (
         <div onClick={handleClickOpen}>{btnText}</div>
       ) : (
-        <Link onClick={handleClickOpen}>{openBtn}</Link>
+        <Button variant="text" onClick={handleClickOpen}>
+          {openBtn}
+        </Button>
       )}
       <Dialog
         onClose={handleClose}

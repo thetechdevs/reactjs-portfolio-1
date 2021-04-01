@@ -2,21 +2,21 @@ import React from "react";
 import Layout from "../Layout";
 import RecentPortfolio from "./RecentPortfolio/RecentPortfolio";
 import Hero from "./HeroArea/Hero";
-import Service from "./Service";
+import Service from "./Service/Service";
 import CommentOfClient from "./CommentOfClient/CommentOfClient";
 // import { CommentOfClient } from "./index";
 // import About from "./About";
 
 const Home = () => {
   return (
-    <div>
-      <Layout>
+    <Layout>
+      <main>
         <Hero />
-        <CommentOfClient />
         <Service />
+        <CommentOfClient />
         <RecentPortfolio />
-      </Layout>
-    </div>
+      </main>
+    </Layout>
   );
 };
 

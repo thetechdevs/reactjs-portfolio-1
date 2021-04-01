@@ -2,13 +2,21 @@
 import "../Style/About.css";
 // import bootstrap components
 import { Col, Row } from "react-bootstrap";
-
-// import assets
-import aboutMe from "../../assets/image/aboutme.png";
-import { Container } from "@material-ui/core";
+// import aboutMe from "../../assets/image/aboutme.png";
+import { CardMedia, Container } from "@material-ui/core";
 import Layout from "../Layout";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const About = () => {
+  AOS.init({
+    duration: 1500,
+    offset: 80,
+  });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout>
       <div
@@ -23,12 +31,13 @@ const About = () => {
         <Container>
           {/* <AboutMe /> */}
           <Row className="align-items-center">
-            <Col md={5} sm={12} xs={12} lg={5}>
+            <Col md={5} sm={12} xs={12} lg={5} data-aos="fade-right">
               <div style={{ width: "100%" }} className="aboutImg_Wrapper">
-                <img
-                  className="img-fluid w-100 h-100 aboutImg"
-                  src={aboutMe}
-                  alt=""
+                <CardMedia
+                  component="img"
+                  image="https://i.ibb.co/HDfKqh6/about-us.jpg"
+                  alt="about us"
+                  height="500px"
                 />
               </div>
             </Col>
@@ -37,9 +46,10 @@ const About = () => {
               xs={12}
               lg={{ span: 6, offset: 1 }}
               md={{ span: 6, offset: 1 }}
+              data-aos="fade-left"
             >
               <h1 className="font-weight-bold">
-                I am <span style={{ color: "#f9bb00" }}>Rayhan</span>
+                I am <span style={{ color: "#f9bb00" }}>Sree</span>
               </h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
@@ -55,7 +65,7 @@ const About = () => {
                   <span>:</span>
                 </Col>
                 <Col md={7} lg={8} sm={7} xs={7}>
-                  <p>Rayhan Islam</p>
+                  <p>Sree</p>
                 </Col>
               </Row>
               <Row>
@@ -66,7 +76,7 @@ const About = () => {
                   <span>:</span>
                 </Col>
                 <Col md={7} lg={8} sm={7} xs={7}>
-                  <p>25 Years</p>
+                  <p>20 Years</p>
                 </Col>
               </Row>
               <Row>

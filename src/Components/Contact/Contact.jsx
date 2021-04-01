@@ -17,8 +17,14 @@ import {
   LanguageIcon,
   EmailIcon,
 } from "./index";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  AOS.init({
+    duration: 1500,
+    offset: 80,
+  });
   return (
     <Layout>
       <Grid container item md={12}>
@@ -55,7 +61,11 @@ const Contact = () => {
                 <Grid item md={6} sm={12} xs={6} id="address__form">
                   <Typography
                     variant="h6"
-                    style={{ margin: "10px 0", fontWeight: "600" }}
+                    style={{
+                      margin: "10px 0",
+                      fontWeight: "600",
+                      color: "#f9bb00",
+                    }}
                   >
                     Address
                   </Typography>
@@ -69,7 +79,11 @@ const Contact = () => {
                 <Grid item md={6} sm={12} xs={6} id="phone__form">
                   <Typography
                     variant="h6"
-                    style={{ margin: "10px 0", fontWeight: "600" }}
+                    style={{
+                      margin: "10px 0",
+                      fontWeight: "600",
+                      color: "#f9bb00",
+                    }}
                   >
                     Phone
                   </Typography>
@@ -84,7 +98,11 @@ const Contact = () => {
               <Grid item md={12}>
                 <Typography
                   variant="h6"
-                  style={{ margin: "10px 0", fontWeight: "600" }}
+                  style={{
+                    margin: "10px 0",
+                    fontWeight: "600",
+                    color: "#f9bb00",
+                  }}
                 >
                   Service
                 </Typography>
@@ -102,7 +120,7 @@ const Contact = () => {
                 </li>
               </Grid>
             </Grid>
-            <Grid item md={6} sm={6} xs={12}>
+            <Grid item md={6} sm={6} xs={12} data-aos="fade-left">
               <Card
                 style={{
                   borderRadius: "15px",
