@@ -1,10 +1,9 @@
 import RecentPortfolioCard from "./RecentPortfolioCard/RecentPortfolioCard";
-// import "./RecentPortfolio.css";
 import recentProjects from "../../../dummyData/recentProjects/recentProjects";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import { Container, Typography } from "@material-ui/core";
-
+import "./RecentPortfolioCard/RecentPortfolioCard.scss";
+import "react-multi-carousel/lib/styles.css";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -39,8 +38,8 @@ const RecentPortfolio = () => {
             </Typography>
             <Typography variant="subtitle1">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-              provident <br /> maiores veniam eveniet molestias sint perferendis
-              labore
+              provident <br className="customBr" /> maiores veniam eveniet
+              molestias sint perferendis labore
             </Typography>
           </div>
 
@@ -52,7 +51,11 @@ const RecentPortfolio = () => {
             keyBoardControl
           >
             {recentProjects.map((review) => (
-              <div key={review.id} style={{ margin: "30px 0" }}>
+              <div
+                className="customCarousel"
+                key={review.id}
+                style={{ margin: "30px 0" }}
+              >
                 <RecentPortfolioCard review={review} />
               </div>
             ))}

@@ -1,8 +1,6 @@
 import { Card, CardMedia } from "@material-ui/core";
-import React from "react";
-
 // import CSS
-import "./RecentPortfolioCard.css";
+import "./RecentPortfolioCard.scss";
 
 const RecentPortfolioCard = ({ review }) => {
   return (

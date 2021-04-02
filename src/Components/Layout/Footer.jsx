@@ -114,7 +114,14 @@ const Footer = () => {
                 </span>
               </div>
             </Grid>
-            <Grid item lg={8} md={8} sm={12} xl={12}>
+            <Grid
+              item
+              lg={8}
+              md={8}
+              sm={12}
+              xl={12}
+              className={FooterStyle.footer_wrapper}
+            >
               <div className={FooterStyle.footer__Contact}>
                 <Link
                   to="http://thetechdevs.com"
