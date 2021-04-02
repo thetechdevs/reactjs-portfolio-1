@@ -1,5 +1,6 @@
 .footer {
   color: #000;
+  font-family: "Comic Sans MS";
   background-color: #e4eeff;
   .footer__headContent {
     border-top: 0.1px solid rgba(255, 255, 255, 0.3);
@@ -40,36 +41,93 @@
     }
     span {
       margin: 0px 5px;
+      a {
+        svg {
+          color: #4a4a4a;
+        }
+      }
     }
   }
+
   .footer__Contact {
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
+
     @media only screen and (max-width: 992px) {
-      display: block;
+      flex-direction: column;
     }
+
+    @media only screen and (max-width: 550px) {
+      width: 130%;
+    }
+
     .footer__option {
+      color: #4a4a4a;
+
       @media only screen and (max-width: 992px) {
         text-align: center;
       }
+
+      @media only screen and (max-width: 415px) {
+        font-size: 10px;
+      }
+
       a {
-        color: #000;
         margin: 0px 5px;
         font-size: 12px;
-        color: #000;
       }
     }
+
     .footer__Contact__Content {
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #4a4a4a;
+
       p {
         font-size: 13px;
         margin: 0px 10px 0px 5px;
-        color: #000;
         font-weight: 100;
       }
+    }
+  }
+
+  .scrollTopSection {
+    display: flex;
+    justify-content: center;
+
+    .scrollTop {
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      bottom: 40px;
+      z-index: 1000;
+      cursor: pointer;
+      animation: fadeIn 0.3s;
+      transition: opacity 0.4s;
+      opacity: 0.5;
+
+      @media only screen and (max-width: 415px) {
+        bottom: 20px;
+      }
+    }
+
+    .scrollTop:hover {
+      opacity: 1;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0.5;
+      }
+    }
+
+    @media only screen and (max-width: 415px) {
+      justify-content: right;
     }
   }
 }

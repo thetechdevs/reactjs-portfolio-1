@@ -1,5 +1,5 @@
+import { useState } from "react";
 import { Container, Grid, Typography } from "@material-ui/core";
-import React from "react";
 import FooterStyle from "./Footer.module.scss";
 import {
   IoLogoFacebook,
@@ -10,8 +10,25 @@ import {
   IoMailOutline,
 } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 const Footer = () => {
+  const [showScroll, setShowScroll] = useState(false);
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
+
+  window.addEventListener("scroll", checkScrollTop);
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className={FooterStyle.footer}>
       <Container>
@@ -48,7 +65,7 @@ const Footer = () => {
                   variant="h5"
                   style={{ marginBottom: "15px", color: "#f6ca00" }}
                 >
-                  TORUN
+                  Torun
                 </Typography>
                 <p>Time zone Squar , New Yeark 2056</p>
               </div>
@@ -59,7 +76,7 @@ const Footer = () => {
                   variant="h5"
                   style={{ marginBottom: "15px", color: "#f6ca00" }}
                 >
-                  warsaw
+                  Warsaw
                 </Typography>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -99,10 +116,13 @@ const Footer = () => {
             </Grid>
             <Grid item lg={8} md={8} sm={12} xl={12}>
               <div className={FooterStyle.footer__Contact}>
-                <div className={FooterStyle.footer__option}>
+                <Link
+                  to="http://thetechdevs.com"
+                  className={FooterStyle.footer__option}
+                >
                   Copyright {new Date().getFullYear()} All Rights Reserved By
                   DEVS4
-                </div>
+                </Link>
                 <div className={FooterStyle.footer__Contact__Content}>
                   <IoPhonePortraitSharp />
                   <p>888--777--666</p>
@@ -114,6 +134,14 @@ const Footer = () => {
           </Grid>
         </Container>
       </div>
+
+      <section className={FooterStyle.scrollTopSection}>
+        <FaArrowCircleUp
+          className={FooterStyle.scrollTop}
+          onClick={scrollTop}
+          style={{ display: showScroll ? "flex" : "none" }}
+        />
+      </section>
     </div>
   );
 };
