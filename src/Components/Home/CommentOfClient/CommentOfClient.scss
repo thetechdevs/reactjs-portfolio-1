@@ -1,0 +1,63 @@
+@mixin iconStyle {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 25px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+@mixin iconHover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.dropbox_icon {
+  @include iconStyle;
+  background-color: #e7f4ff;
+  &:hover {
+    background-color: #eff0ff;
+  }
+  &:hover .commentIcon {
+    @include iconHover;
+  }
+}
+.google_icon {
+  @include iconStyle;
+  background-color: #ffebcf;
+  &:hover {
+    background-color: #eff0ff;
+  }
+  &:hover .commentIcon {
+    @include iconHover;
+  }
+}
+.slack_icon {
+  @include iconStyle;
+  background-color: #eee8ff;
+  &:hover {
+    background-color: #eff0ff;
+  }
+  &:hover .commentIcon {
+    @include iconHover;
+  }
+}
+.filePdf_icon {
+  @include iconStyle;
+  background-color: #fff1c5;
+  &:hover {
+    background-color: #eff0ff;
+  }
+  &:hover .commentIcon {
+    @include iconHover;
+  }
+}
+.spotify_icon {
+  @include iconStyle;
+  background-color: #eee0ba;
+  &:hover {
+    background-color: #eff0ff;
+  }
+  &:hover .commentIcon {
+    @include iconHover;
+  }
+}
