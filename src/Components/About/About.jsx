@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import { CardMedia, Container } from "@material-ui/core";
 import Layout from "../Layout";
+import { aboutUs } from "../../assets";
 import AOS from "aos";
 import "./About.scss";
 import "aos/dist/aos.css";
@@ -30,7 +31,7 @@ const About = () => {
               <div style={{ width: "100%" }} className="aboutImg_Wrapper">
                 <CardMedia
                   component="img"
-                  image="https://i.ibb.co/HDfKqh6/about-us.jpg"
+                  image={aboutUs}
                   alt="about us"
                   height="500px"
                   className="about_img"

@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 
 const CommentOfClient = () => {
   AOS.init({
-    duration: 1000,
+    duration: 1500,
     offset: 50,
   });
   return (

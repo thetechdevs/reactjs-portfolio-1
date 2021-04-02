@@ -2,6 +2,7 @@ import { Button, Grid, Hidden, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "./Hero.scss";
 import Typical from "react-typical";
+import { girl } from "../../../assets";
 
 const HeroArea = () => {
   return (
@@ -46,11 +47,7 @@ const HeroArea = () => {
       <Grid item md={6} sm={6} xs={12}>
         <Hidden xsDown>
           <div style={{ width: "100%" }}>
-            <img
-              src="https://i.ibb.co/zn5jhx1/gril3.png"
-              alt="portfolio"
-              style={{ width: "75%" }}
-            />
+            <img src={girl} alt="portfolio" style={{ width: "75%" }} />
           </div>
         </Hidden>
       </Grid>

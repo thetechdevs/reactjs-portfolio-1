@@ -1,3 +1,5 @@
+import { blog } from "../assets";
+
 const blogPosts = [
   {
     id: 1,
@@ -5,7 +7,7 @@ const blogPosts = [
     date: "March 04, 2020",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, praesentium!",
-    image: "https://i.ibb.co/7Cy4DnZ/blog.jpg",
+    image: blog,
   },
   {
     id: 2,
@@ -13,7 +15,7 @@ const blogPosts = [
     date: "March 09, 2020",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, praesentium!",
-    image: "https://i.ibb.co/7Cy4DnZ/blog.jpg",
+    image: blog,
   },
   {
     id: 3,
@@ -21,7 +23,7 @@ const blogPosts = [
     date: "March 09, 2020",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, praesentium!",
-    image: "https://i.ibb.co/7Cy4DnZ/blog.jpg",
+    image: blog,
   },
   {
     id: 4,
@@ -29,7 +31,7 @@ const blogPosts = [
     date: "March 18, 2021",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, praesentium!",
-    image: "https://i.ibb.co/7Cy4DnZ/blog.jpg",
+    image: blog,
   },
   {
     id: 5,
@@ -37,7 +39,7 @@ const blogPosts = [
     date: "May 04, 2020",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, praesentium!",
-    image: "https://i.ibb.co/7Cy4DnZ/blog.jpg",
+    image: blog,
   },
   {
     id: 6,
@@ -45,7 +47,7 @@ const blogPosts = [
     date: "July 10, 2020",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, praesentium!",
-    image: "https://i.ibb.co/7Cy4DnZ/blog.jpg",
+    image: blog,
   },
 ];
 

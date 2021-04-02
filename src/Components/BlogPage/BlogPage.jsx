@@ -46,6 +46,7 @@ const BlogPage = () => {
                     height="300"
                     image="https://i.ibb.co/7Cy4DnZ/blog.jpg"
                     alt="prasonal blog"
+                    className="blogTopImage"
                   />
                 </div>
               </Link>

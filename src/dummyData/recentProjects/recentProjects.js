@@ -1,7 +1,9 @@
+import { countDown, notFound } from "../../assets";
+
 const recentProjects = [
   {
     id: 1,
-    img: "https://i.ibb.co/tHY3bJ6/404.png",
+    img: notFound,
     name: "Parves Wahid",
     message:
       "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners.",
@@ -10,7 +12,7 @@ const recentProjects = [
   },
   {
     id: 2,
-    img: "https://i.ibb.co/JdBsbjL/countdown.webp",
+    img: countDown,
     name: "Rashedul Islam",
     message:
       "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners.",
@@ -19,7 +21,7 @@ const recentProjects = [
   },
   {
     id: 3,
-    img: "https://i.ibb.co/tHY3bJ6/404.png",
+    img: notFound,
     name: "Parves Wahid",
     message:
       "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners.",
@@ -28,7 +30,7 @@ const recentProjects = [
   },
   {
     id: 4,
-    img: "https://i.ibb.co/JdBsbjL/countdown.webp",
+    img: countDown,
     name: "Rashedul Islam",
     message:
       "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners.",
@@ -37,7 +39,7 @@ const recentProjects = [
   },
   {
     id: 5,
-    img: "https://i.ibb.co/tHY3bJ6/404.png",
+    img: notFound,
     name: "Parves Wahid",
     message:
       "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners.",
@@ -46,7 +48,7 @@ const recentProjects = [
   },
   {
     id: 6,
-    img: "https://i.ibb.co/JdBsbjL/countdown.webp",
+    img: countDown,
     name: "Rashedul Islam",
     message:
       "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners.",
