@@ -126,6 +126,7 @@ const Footer = () => {
                 <a
                   href="http://thetechdevs.com"
                   target="_blank"
+                  rel="noreferrer"
                   className={FooterStyle.footer__option}
                 >
                   Copyright {new Date().getFullYear()} All Rights Reserved By
