@@ -83,9 +83,16 @@ const BlogPosts = () => {
       <Row>
         {blogs.map((blog) => (
           <Col lg={4} md={6} sm={12} xs={12} key={blog.id} data-aos="fade-up">
-            <div className="mt-5 blog_card">
+            <div className="mt-3 blog_card">
               <Link to="/" style={{ textDecoration: "none" }}>
-                <Card style={{ border: "none" }}>
+                <Card
+                  style={{
+                    border: "1px solid #f1f1f1",
+                    outline: "none",
+                    boxShadow: "none",
+                    borderRadius: "10px",
+                  }}
+                >
                   <div style={{ overflow: "hidden" }}>
                     <img
                       className="blog_image"
@@ -93,12 +100,12 @@ const BlogPosts = () => {
                       alt="parsonal blog"
                     />
                   </div>
-                  <CardContent style={{ padding: "20px" }}>
+                  <CardContent style={{ padding: "15px" }}>
                     <small className="text-muted">{blog.date}</small>
                     <Typography variant="h6" className="blog_title">
-                      {blog.blog_title.substring(0, 20) + ".."}
+                      {blog.blog_title.substring(0, 23) + ".."}
                     </Typography>
-                    <Typography variant="subtitle1" className="text-muted">
+                    <Typography variant="subtitle2" className="text-muted">
                       {blog.description.substring(0, 120) + ".."}
                     </Typography>
                   </CardContent>

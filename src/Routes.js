@@ -1,10 +1,11 @@
+import React, { lazy } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Contact from "./Components/Contact/Contact";
-import About from "./Components/About/About";
-import BlogPage from "./Components/BlogPage/BlogPage";
-import Home from "./Components/Home/Home";
 import NotFound from "./Components/NotFound/NotFound";
-import Portfolio from "./Components/Portfolio/Portfolio";
+const Portfolio = lazy(() => import("./Components/Portfolio/Portfolio"));
+const BlogPage = lazy(() => import("./Components/BlogPage/BlogPage"));
+const About = lazy(() => import("./Components/About/About"));
+const Home = lazy(() => import("./Components/Home/Home"));
+const Contact = lazy(() => import("./Components/Contact/Contact"));
 
 const Routes = () => {
   return (
@@ -15,9 +16,7 @@ const Routes = () => {
         <Route path="/contact" component={Contact} />
         <Route path="/blog" component={BlogPage} />
         <Route path="/portfolio" component={Portfolio} />
-        <Route path="*">
-          <NotFound />
-        </Route>
+        <Route path="*" component={NotFound} />
       </Switch>
     </Router>
   );
