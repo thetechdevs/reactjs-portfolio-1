@@ -1,7 +1,6 @@
 .footer {
   color: #000;
   background-color: #e4eeff;
-  padding: 30px 0px;
   .footer__headContent {
     border-top: 0.1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 0.1px solid rgba(255, 255, 255, 0.3);
@@ -35,7 +34,7 @@
     }
   }
   .footer__socialIcon {
-    padding-top: 2rem;
+    padding: 1rem 0;
     @media only screen and (max-width: 992px) {
       text-align: center;
     }
@@ -44,7 +43,7 @@
     }
   }
   .footer__Contact {
-    padding-top: 2rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     @media only screen and (max-width: 992px) {

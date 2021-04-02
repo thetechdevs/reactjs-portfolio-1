@@ -1,4 +1,4 @@
-import { Grid, Container, Button } from "@material-ui/core";
+import { Grid, Container, Button, Typography } from "@material-ui/core";
 import { portfolios } from "../../dummyData/portfolio";
 import Layout from "../Layout/index";
 import { useEffect, useState } from "react";
@@ -25,6 +25,11 @@ const Portfolio = () => {
   return (
     <Layout>
       <Container>
+        <Grid item md={12}>
+          <Typography variant="h4" color="initial">
+            My <span style={{ color: "#f9bb00" }}>Portfolio</span>
+          </Typography>
+        </Grid>
         <Grid
           container
           item

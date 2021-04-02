@@ -100,10 +100,8 @@ const Footer = () => {
             <Grid item lg={8} md={8} sm={12} xl={12}>
               <div className={FooterStyle.footer__Contact}>
                 <div className={FooterStyle.footer__option}>
-                  <a href="/">Service</a>
-                  <a href="/">Portfolio</a>
-                  <a href="/">Testimonials</a>
-                  <a href="/">Blog</a>
+                  Copyright {new Date().getFullYear()} All Rights Reserved By
+                  DEVS4
                 </div>
                 <div className={FooterStyle.footer__Contact__Content}>
                   <IoPhonePortraitSharp />
