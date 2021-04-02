@@ -1,6 +1,5 @@
 import { Button, Grid, Hidden, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import heroImg from "../../../assets/image/gril3.jpg";
 import "./Hero.scss";
 import Typical from "react-typical";
 
@@ -47,7 +46,11 @@ const HeroArea = () => {
       <Grid item md={6} sm={6} xs={12}>
         <Hidden xsDown>
           <div style={{ width: "100%" }}>
-            <img src={heroImg} alt="portfolio" style={{ width: "75%" }} />
+            <img
+              src="https://i.ibb.co/zn5jhx1/gril3.png"
+              alt="portfolio"
+              style={{ width: "75%" }}
+            />
           </div>
         </Hidden>
       </Grid>

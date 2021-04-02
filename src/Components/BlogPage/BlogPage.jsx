@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 // import bootstrap components
-// import { Row, Col, Card } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 // import CSS
-import "./BlogPage.css";
+// import "./BlogPage.css";
+import "./BlogPage.scss";
 import {
   Card,
   CardContent,

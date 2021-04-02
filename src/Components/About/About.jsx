@@ -1,13 +1,11 @@
-// import CSS
-import "../Style/About.css";
+import { useEffect } from "react";
 // import bootstrap components
 import { Col, Row } from "react-bootstrap";
-// import aboutMe from "../../assets/image/aboutme.png";
 import { CardMedia, Container } from "@material-ui/core";
 import Layout from "../Layout";
 import AOS from "aos";
+import "./About.scss";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const About = () => {
   AOS.init({
@@ -21,15 +19,12 @@ const About = () => {
     <Layout>
       <div
         style={{
-          // backgroundColor: "#110F1B",
           background: " linear-gradient(360deg, #ffffff, #ffffff)",
           padding: "30px 0px",
-          // color: "white",
           color: "#000",
         }}
       >
         <Container>
-          {/* <AboutMe /> */}
           <Row className="align-items-center">
             <Col md={5} sm={12} xs={12} lg={5} data-aos="fade-right">
               <div style={{ width: "100%" }} className="aboutImg_Wrapper">
@@ -38,6 +33,7 @@ const About = () => {
                   image="https://i.ibb.co/HDfKqh6/about-us.jpg"
                   alt="about us"
                   height="500px"
+                  className="about_img"
                 />
               </div>
             </Col>

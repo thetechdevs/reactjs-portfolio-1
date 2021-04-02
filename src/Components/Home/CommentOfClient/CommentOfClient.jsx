@@ -2,8 +2,7 @@
 import { Row } from "react-bootstrap";
 // import icons
 import { FaDropbox, FcGoogle, SiSlack, GoFilePdf, FaSpotify } from "./index";
-// import CSS style
-import "../../Style/CommentOfClient.css";
+import "./CommentOfClient.scss";
 import { Container } from "@material-ui/core";
 
 const CommentOfClient = () => {
