@@ -21,7 +21,8 @@ const NavBar = ({ children, sticky = false, className, ...rest }) => {
     return function () {
       observer.unobserve(cachedRef);
     };
-  }, []);
+  }, [ref]);
+
   return (
     <div
       id="menu_wrapper"

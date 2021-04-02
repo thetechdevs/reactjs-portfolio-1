@@ -1,5 +1,6 @@
 .footer {
   color: #000;
+  font-family: "Comic Sans MS";
   background-color: #e4eeff;
   .footer__headContent {
     border-top: 0.1px solid rgba(255, 255, 255, 0.3);
@@ -40,6 +41,11 @@
     }
     span {
       margin: 0px 5px;
+      a {
+        svg {
+          color: #4a4a4a;
+        }
+      }
     }
   }
   .footer__Contact {
@@ -50,24 +56,25 @@
       display: block;
     }
     .footer__option {
+      color: #4a4a4a;
       @media only screen and (max-width: 992px) {
         text-align: center;
       }
       a {
-        color: #000;
+        // color: #000;
         margin: 0px 5px;
         font-size: 12px;
-        color: #000;
       }
     }
     .footer__Contact__Content {
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #4a4a4a;
       p {
         font-size: 13px;
         margin: 0px 10px 0px 5px;
-        color: #000;
+        // color: #000;
         font-weight: 100;
       }
     }
