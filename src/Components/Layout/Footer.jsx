@@ -116,13 +116,14 @@ const Footer = () => {
             </Grid>
             <Grid item lg={8} md={8} sm={12} xl={12}>
               <div className={FooterStyle.footer__Contact}>
-                <Link
-                  to="http://thetechdevs.com"
+                <a
+                  href="http://thetechdevs.com"
+                  target="_blank"
                   className={FooterStyle.footer__option}
                 >
                   Copyright {new Date().getFullYear()} All Rights Reserved By
-                  DEVS4
-                </Link>
+                  "The Tech Devs"
+                </a>
                 <div className={FooterStyle.footer__Contact__Content}>
                   <IoPhonePortraitSharp />
                   <p>888--777--666</p>
